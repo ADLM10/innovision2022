@@ -21,7 +21,7 @@ body {
 }
 
 .card-collection {
-  margin-top: 15%;
+  margin-top: 25%;
   margin-left: 10%;
   margin-right: 10%;
   display: -webkit-flex;
@@ -192,6 +192,22 @@ button:hover {
 .modal-body a {
   color: rgba(134, 248, 248, 0.788) !important;
 }
+.btn-register {
+  border-color: #3498db;
+  color: #fff;
+  box-shadow: 0 0 40px 40px #3498db inset, 0 0 0 0 #3498db;
+  -webkit-transition: all 150ms ease-in-out;
+  transition: all 150ms ease-in-out;
+  width: 10rem;
+  height: 4rem;
+  border: 2px solid #3498db;
+  border-radius: 2rem;
+  margin-top: 2rem;
+  font-size: 1.4rem;
+}
+.btn-register:hover {
+  box-shadow: 0 0 10px 0 #3498db inset, 0 0 10px 4px #3498db;
+}
 
 @media screen and (max-width: 768px) {
   div.headtext {
@@ -210,6 +226,7 @@ button:hover {
   }
   .card-collection {
     margin-top: 8rem;
+    padding: 2rem;
   }
 
   .name {
