@@ -1,0 +1,25 @@
+{
+  "name": "regalia-2022-web",
+  "private": true,
+  "version": "0.0.0",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "serve": "vite build && vite preview",
+    "tw-watch": "npx tailwindcss -i ./tailwind-directives.css -o ./src/tailwind.css --watch --minify",
+    "tw-build": "npx tailwindcss -o ./src/build.css --minify",
+    "format": "npx prettier --write"
+  },
+  "devDependencies": {
+    "prettier": "^2.6.2",
+    "prettier-plugin-tailwindcss": "^0.1.10",
+    "tailwindcss": "^3.0.24",
+    "vite": "^2.9.7"
+  },
+  "dependencies": {
+    "@splidejs/splide": "^4.0.1",
+    "flowbite": "^1.4.5",
+    "splitting": "^1.0.6"
+  }
+}

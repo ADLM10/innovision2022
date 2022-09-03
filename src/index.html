@@ -1,0 +1,659 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <meta name="msapplication-tap-highlight" content="no" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Innovision 2022 | The Annual departmental Fest in RCCIIT</title>
+
+    <meta name="author" content="Innovision 2022 Tech Team" />
+    <meta name="keywords" content="website annual fest rcciit college" />
+    <meta
+      name="description"
+      content="Innovision - The annual departmental fest in RCC Institute of Information Technology 2022"
+    />
+
+    <meta itemprop="name" content="Innovision" />
+    <meta
+      itemprop="description"
+      content="Innovision - The annual departmental fest in RCC Institute of Information Technology 2022"
+    />
+    <meta
+      itemprop="image"
+      content="https://ik.imagekit.io/rain/Innovision22/Innovision_og_image_ZLL4BGHFD?ik-sdk-version=javascript-1.4.3"
+    />
+
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta name="apple-mobile-web-app-title" content="Innovision 2022" />
+
+    <meta property="og:url" content="https://Innovision2022.co/" />
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:title"
+      content="Innovision 2022 | The Annual departmental Fest in RCCIIT"
+    />
+    <meta
+      property="og:image"
+      content="https://ik.imagekit.io/rain/Innovision22/Innovision_og_image_ZLL4BGHFD?ik-sdk-version=javascript-1.4.3"
+    />
+    <meta
+      property="og:description"
+      content="Innovision - The annual departmental fest in RCC Institute of Information Technology 2022"
+    />
+    <meta property="og:site_name" content="Innovision2022.co" />
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+
+    <link type="text/plain" rel="author" href="/humans.txt" />
+
+    <link rel="stylesheet" href="./contact.css" />
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"
+      integrity="sha512-z4OUqw38qNLpn1libAN9BsoDx6nbNFio5lA6CuTp9NlK83b89hgyCVq+N5FdBJptINztxn1Z3SaKSKUS5UP60Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+  </head>
+
+  <style>
+    * {
+      -webkit-tap-highlight-color: transparent;
+    }
+
+    .preloader-page {
+      --bg: #0d0d0d;
+      --text: #f2f2f2;
+
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100vh;
+      z-index: 1100;
+      background-color: var(--bg);
+      cursor: default;
+      display: none;
+    }
+
+    .preloader-page .loader__wrapper {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .preloader-page .loader__text {
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      color: var(--text);
+      margin: 0;
+    }
+
+    .preloader-page .loader__text > h3 {
+      font-size: calc(70% + 0.5vw);
+      text-transform: uppercase;
+      letter-spacing: 5px;
+      font-weight: 700;
+    }
+
+    .preloader-page .loader__text > p {
+      font-size: calc(70% + 0.1vw);
+      letter-spacing: 1.2px;
+      text-align: center;
+    }
+
+    .preloader-page .loader__circle {
+      display: block;
+      position: absolute;
+      border-radius: 50%;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      width: 250px;
+      height: 250px;
+      animation-name: SpinAround;
+      animation-iteration-count: infinite;
+      animation-duration: 2s;
+      animation-fill-mode: both;
+      animation-timing-function: linear;
+      box-shadow: 0px 0px 1px var(--text);
+    }
+
+    .preloader-page .loader__circle:nth-of-type(1) {
+      animation-direction: reverse;
+      transform-origin: 49.6% 49.8%;
+    }
+
+    .preloader-page .loader__circle:nth-of-type(2) {
+      transform-origin: 49.5% 48.8%;
+    }
+
+    .preloader-page .loader__shape {
+      width: 100%;
+      margin: -0.5rem 0 0 0;
+      position: relative;
+    }
+
+    .preloader-page .shape {
+      height: 100vh;
+      width: 100%;
+      display: block;
+      fill: var(--bg);
+    }
+
+    @keyframes SpinAround {
+      0% {
+        transform: translate(-50%, -50%) rotate(0);
+      }
+
+      100% {
+        transform: translate(-50%, -50%) rotate(-360deg);
+      }
+    }
+  </style>
+
+  <body class="relative m-0 mx-auto bg-background font-primary text-text">
+    <div data-container style="display: none">
+      <img
+        class="absolute z-0 h-screen w-full object-cover object-center"
+        src="images/bg_home.jpg"
+        alt=""
+        aria-hidden="true"
+      />
+      <div
+        class="absolute inset-0 z-[1] h-screen bg-background opacity-40"
+      ></div>
+
+      <!-- HOME -->
+      <section
+        data-home
+        id="home"
+        class="relative z-[2] min-h-screen w-full pt-24"
+      >
+        <div class="z-10 px-6 md:px-12">
+          <img src="https://upload.wikimedia.org/wikipedia/en/thumb/8/8d/National_Board_of_Accreditation.svg/330px-National_Board_of_Accreditation.svg.png" alt="" style="width:100px ;">
+          <div class="mt-6">
+            <p
+              data-sub-title
+              class="text-min-base font-medium md:text-max-base"
+            >
+              Presenting the annual departmental fest
+            </p>
+            <h1
+              data-splitting
+              class="overflow-hidden text-min-xl font-black md:text-max-xl"
+            >
+              Innovision '22
+            </h1>
+          </div>
+
+          <div
+            data-text
+            class="mt-4 overflow-hidden text-min-lg font-bold md:text-max-lg"
+          >
+            <h3>Relive.</h3>
+            <h3>Rejoice.</h3>
+            <h3>Rejuvenate.</h3>
+          </div>
+
+          <!-- links as button -->
+          <div
+            class="mt-8 flex items-center space-x-6 text-center text-min-sm font-medium text-background md:mt-12 md:text-max-sm"
+          >
+            <a
+              href="events/"
+              class="rounded-lg bg-gradient-to-r from-red-200 via-red-300 to-yellow-200 px-5 py-2.5 hover:bg-gradient-to-bl focus:outline-none focus:ring-4 focus:ring-red-100 md:px-6 md:py-3"
+              >See events</a
+            >
+            <a
+              data-wip
+              href="about/"
+              class="border-red rounded-lg border px-5 py-2.5 hover:bg-gradient-to-bl focus:outline-none focus:ring-4 focus:ring-red-100 md:px-6 md:py-3"
+            >
+              About Innovision
+            </a>
+          </div>
+
+          <div class="absolute bottom-16 md:right-12">
+            <div data-guitar-image class="h-40 w-40 sm:ml-auto sm:h-48 sm:w-48">
+              <img
+                class="block h-full w-full"
+                src="https://cdn.discordapp.com/attachments/1012410387464998982/1015632141352185978/IMG-20220902-WA0038.jpg"
+                alt=""
+                aria-hidden="true"
+              />
+            </div>
+            <p
+              data-guitar-date
+              class="mt-1 text-min-base font-light md:text-right md:text-max-lg"
+            >
+              8th to 9th Sept 
+            </p>
+            <div
+              data-guitar-location
+              class="flex items-center space-x-2 text-min-base md:text-max-lg"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-5 w-5 sm:h-8 sm:w-8"
+                viewBox="0 0 20 20"
+                fill="currentColor"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z"
+                  clip-rule="evenodd"
+                />
+              </svg>
+              <p class="text-min-base font-bold md:text-right md:text-max-lg">
+                CSE Department
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div
+          style="background: linear-gradient(to top, #0d0d0d, rgba(0, 0, 0, 0))"
+          class="absolute bottom-0 z-50 h-20 w-full"
+        ></div>
+      </section>
+
+      <!-- ARTISTS -->
+      <section
+        data-artist
+        id="artist"
+        class="mb-12 min-h-screen w-full scroll-mt-20 px-6 md:px-12"
+      >
+        <h1 class="mb-6 text-min-xl font-black md:text-max-xl">Artists</h1>
+
+        <div class="flex w-full flex-wrap items-center justify-center gap-12">
+          <!-- 19 may -->
+          <div class="flex flex-col items-center">
+            <span
+              class="mb-6 text-min-lg font-bold text-text underline decoration-dark underline-offset-1 md:text-max-lg"
+              >8th Sept</span
+            >
+            <div
+              class="flex flex-wrap items-center justify-center gap-6 md:justify-between"
+            >
+              <div
+                class="max-w-xs flex-shrink-0 rounded-lg border-2 border-dark shadow-lg"
+              >
+                <img
+                  class="mb-8 block rounded-lg object-cover object-center p-0"
+                  src="./images/eshaas.jpg"
+                  alt="Ehsaas India image"
+                />
+                <div class="px-5 pb-5">
+                  <h5
+                    class="text-center text-min-base font-medium tracking-tight text-text md:text-max-base"
+                  >
+                    Ehsaas India
+                  </h5>
+                </div>
+              </div>
+              <div
+                class="max-w-xs flex-shrink-0 rounded-lg border-2 border-dark shadow-lg"
+              >
+                <img
+                  class="mb-8 block rounded-lg object-cover object-center p-0"
+                  src="./images/somlata.jpg"
+                  alt="Somlata and the Aces image"
+                />
+                <div class="px-5 pb-5">
+                  <h5
+                    class="text-center text-min-base font-medium tracking-tight text-text md:text-max-base"
+                  >
+                    Somlata and the Aces
+                  </h5>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- 20 may -->
+          <div class="flex flex-col items-center">
+            <span
+              class="mb-6 text-min-lg font-bold text-text underline decoration-dark underline-offset-1 md:text-max-lg"
+              >9th Sept</span
+            >
+            <div
+              class="flex flex-wrap items-end justify-center gap-6 md:justify-between"
+            >
+              <div
+                class="max-w-xs flex-shrink-0 rounded-lg border-2 border-dark shadow-lg"
+              >
+                <img
+                  class="mb-8 block rounded-lg object-cover object-center p-0"
+                  src="./images/ttp.jpg"
+                  alt="Tribute to Pancham image"
+                />
+                <div class="px-5 pb-5">
+                  <h5
+                    class="mb-2 text-center text-min-base font-medium tracking-tight text-text md:text-max-base"
+                  >
+                    Tribute to Pancham
+                  </h5>
+                  <p class="text-center text-min-sm text-gray md:text-max-sm">
+                    Kishore Sodha, Sachin Jambhekar, <br />
+                    Sujoy Bhowmik, Sispiya and team
+                  </p>
+                </div>
+              </div>
+              <div
+                class="max-w-xs flex-shrink-0 rounded-lg border-2 border-dark shadow-lg"
+              >
+                <img
+                  class="mb-8 block rounded-lg object-cover object-center p-0"
+                  src="./images/ua.jpg"
+                  alt="Underground Authority image"
+                />
+                <div class="px-5 pb-5">
+                  <h5
+                    class="text-center text-min-base font-medium tracking-tight text-text md:text-max-base"
+                  >
+                    Underground Authority
+                  </h5>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- GALLERY -->
+      <section
+        data-gallery
+        id="gallery"
+        class="mb-12 w-full scroll-mt-20 space-y-6 px-6 md:px-12"
+      >
+        <h1 class="text-min-xl font-black md:text-max-xl">Gallery</h1>
+        <p class="text-min-base md:text-max-base">
+          See some of the best photos of Innovision
+        </p>
+        <!-- carousel container -->
+        <div class="splide">
+          <div
+            style="scrollbar-width: none"
+            class="splide__track h-[calc(100vh/10rem) sm:h-[calc(100vh-15rem)]"
+          >
+            <ul data-carousel class="splide__list w-full will-change-transform">
+              <li class="splide__slide" data-splide-interval="2000">
+                <img
+                  data-splide-lazy="https://ik.imagekit.io/rain/Innovision22/carousel/1_DDMYIpaSq.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1652622984977"
+                  class="block h-full w-full rounded-lg object-cover object-center"
+                />
+              </li>
+              <li class="splide__slide" data-splide-interval="2000">
+                <img
+                  data-splide-lazy="https://ik.imagekit.io/rain/Innovision22/carousel/2_zP7uVkIl3.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1652622985598"
+                  class="block h-full w-full rounded-lg object-cover object-center"
+                />
+              </li>
+              <li class="splide__slide" data-splide-interval="2000">
+                <img
+                  data-splide-lazy="https://ik.imagekit.io/rain/Innovision22/carousel/3_kVIRYsgl3F.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1652622986476"
+                  class="block h-full w-full rounded-lg object-cover object-center"
+                />
+              </li>
+              <li class="splide__slide" data-splide-interval="2000">
+                <img
+                  data-splide-lazy="https://ik.imagekit.io/rain/Innovision22/carousel/4_KoRTstjSe.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1652622985869"
+                  class="block h-full w-full rounded-lg object-cover object-center"
+                />
+              </li>
+              <li class="splide__slide" data-splide-interval="2000">
+                <img
+                  data-splide-lazy="https://ik.imagekit.io/rain/Innovision22/carousel/5_b_9YQZ7Tgp.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1652622986813"
+                  class="block h-full w-full rounded-lg object-cover object-center"
+                />
+              </li>
+              <li class="splide__slide" data-splide-interval="2000">
+                <img
+                  data-splide-lazy="https://ik.imagekit.io/rain/Innovision22/carousel/6_jxKp0sy83.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1652622985707"
+                  class="block h-full w-full rounded-lg object-cover object-center"
+                />
+              </li>
+              <li class="splide__slide" data-splide-interval="2000">
+                <img
+                  data-splide-lazy="https://ik.imagekit.io/rain/Innovision22/carousel/7_osOx0gxHy0.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1652622986117"
+                  class="block h-full w-full rounded-lg object-cover object-center"
+                />
+              </li>
+              <li class="splide__slide" data-splide-interval="2000">
+                <img
+                  data-splide-lazy="https://ik.imagekit.io/rain/Innovision22/carousel/8_NQ06U-dsU.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1652622986823"
+                  class="block h-full w-full rounded-lg object-cover object-center"
+                />
+              </li>
+              <li class="splide__slide" data-splide-interval="2000">
+                <img
+                  data-splide-lazy="https://ik.imagekit.io/rain/Innovision22/carousel/9_CLc5htNUUy.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1652622985910"
+                  class="block h-full w-full rounded-lg object-cover object-center"
+                />
+              </li>
+              <li class="splide__slide" data-splide-interval="2000">
+                <img
+                  data-splide-lazy="https://ik.imagekit.io/rain/Innovision22/carousel/10_alwvgvJMP.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1652622983273"
+                  class="block h-full w-full rounded-lg object-cover object-center"
+                />
+              </li>
+              <li class="splide__slide" data-splide-interval="2000">
+                <img
+                  data-splide-lazy="https://ik.imagekit.io/rain/Innovision22/carousel/11_rZ5rB_Krev.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1652622985457"
+                  class="block h-full w-full rounded-lg object-cover object-center"
+                />
+              </li>
+              <li class="splide__slide" data-splide-interval="2000">
+                <img
+                  data-splide-lazy="https://ik.imagekit.io/rain/Innovision22/carousel/12__8I1XOOP0I.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1652622986473"
+                  class="block h-full w-full rounded-lg object-cover object-center"
+                />
+              </li>
+              <li class="splide__slide" data-splide-interval="2000">
+                <img
+                  data-splide-lazy="https://ik.imagekit.io/rain/Innovision22/carousel/13_6CsqVWrBRh.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1652622984624"
+                  class="block h-full w-full rounded-lg object-cover object-center"
+                />
+              </li>
+              <li class="splide__slide" data-splide-interval="2000">
+                <img
+                  data-splide-lazy="https://ik.imagekit.io/rain/Innovision22/carousel/14_ZObsW7_gG8.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1652622986953"
+                  class="block h-full w-full rounded-lg object-cover object-center"
+                />
+              </li>
+              <li class="splide__slide" data-splide-interval="2000">
+                <img
+                  data-splide-lazy="https://ik.imagekit.io/rain/Innovision22/carousel/15_yz2DVhuq8.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1652622986771"
+                  class="block h-full w-full rounded-lg object-cover object-center"
+                />
+              </li>
+              <li class="splide__slide" data-splide-interval="2000">
+                <img
+                  data-splide-lazy="https://ik.imagekit.io/rain/Innovision22/carousel/16_hd3Dh2sFu.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1652622985555"
+                  class="block h-full w-full rounded-lg object-cover object-center"
+                />
+              </li>
+              <li class="splide__slide" data-splide-interval="2000">
+                <img
+                  data-splide-lazy="https://ik.imagekit.io/rain/Innovision22/carousel/17_c15mThiUt.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1652622984603"
+                  class="block h-full w-full rounded-lg object-cover object-top"
+                />
+              </li>
+              <li class="splide__slide" data-splide-interval="2000">
+                <img
+                  data-splide-lazy="https://ik.imagekit.io/rain/Innovision22/carousel/18_AtjFvq3GyZ.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1652622987217"
+                  class="block h-full w-full rounded-lg object-cover object-top"
+                />
+              </li>
+              <li class="splide__slide" data-splide-interval="2000">
+                <img
+                  data-splide-lazy="https://ik.imagekit.io/rain/Innovision22/carousel/19_Ou0IbUJVFH.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1652622985827"
+                  class="block h-full w-full rounded-lg object-cover object-center"
+                />
+              </li>
+              <li class="splide__slide" data-splide-interval="2000">
+                <img
+                  data-splide-lazy="https://ik.imagekit.io/rain/Innovision22/carousel/20_fu-QmTIO9.jpg?ik-sdk-version=javascript-1.4.3"
+                  class="block h-full w-full rounded-lg object-cover object-center"
+                />
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      
+      <section
+        data-contact
+        id="contact"
+        class="contact w-full scroll-mt-20 px-6 md:px-12"
+      >
+        <h1 class="mb-6 text-min-xl font-black md:text-max-xl">Contact</h1>
+        <div class="contact-middle-section">
+          <div class="google-maps">
+            <iframe
+              class="maps"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3685.760388605362!2d88.36258649999999!3d22.5131715!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39f89c4c402582b5%3A0x8cfff1e8bddb6ff!2sNazrul%20Mancha!5e0!3m2!1sen!2sin!4v1651865870162!5m2!1sen!2sin"
+              width="500"
+              height="350"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+          <div class="contact-email-section">
+            <div class="email-us">
+              <h3 class="text-min-lg font-bold md:text-min-lg">Email</h3>
+              <a
+                class="text-min-base font-medium md:text-max-base"
+                href="mailto:Innovision2k22@gmail.com"
+                >Innovision2k22@gmail.com</a
+              >
+            </div>
+            <div class="contact-us">
+              <h3 class="text-min-lg font-bold md:text-max-lg">Coordinators</h3>
+              <div class="contacts font-primary">
+                <div class="contacts-item">
+                  <h5 class="text-min-base md:text-max-base">
+                    Bhaswati Chakraborty
+                  </h5>
+                  <a href="tel:+916291293545">+91 62912 93545</a>
+                </div>
+                <div class="contacts-item">
+                  <h5 class="text-min-base md:text-max-base">
+                    Nivedita Chakraborty
+                  </h5>
+                  <a href="tel:+918583057308">+91 85830 57308</a>
+                </div>
+                <!-- <div class="contacts-item">
+              <h4>Name</h4>
+              <a href="tel:+4733378901">+47 333 78 901</a>
+            </div> -->
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="follow-us">
+          <h2>Follow us</h2>
+          <div class="platforms">
+            <div>
+              <a
+                href="https://www.facebook.com/Innovision.rccfests/"
+                target="_blank"
+                >Facebook</a
+              >
+            </div>
+            <div>
+              <a
+                href="https://www.instagram.com/Innovision_rcc_2022/"
+                target="_blank"
+                >Instagram</a
+              >
+            </div>
+          </div>
+          <iframe
+            class="maps-mob-iframe"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3685.760388605362!2d88.36258649999999!3d22.5131715!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39f89c4c402582b5%3A0x8cfff1e8bddb6ff!2sNazrul%20Mancha!5e0!3m2!1sen!2sin!4v1651865870162!5m2!1sen!2sin"
+            width="600"
+            height="450"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
+      </section>
+
+      <footer
+        class="mt-6 w-full rounded-lg p-6 shadow md:flex md:items-center md:justify-between md:px-12"
+      >
+        <span class="text-min-sm text-accent sm:text-center md:text-max-sm"
+          >© 2022
+          <a href="https://Innovision2022.co/" class="hover:underline">Innovision™</a
+          >. All Rights Reserved.
+        </span>
+
+        <main class="mt-3 md:mt-0">
+          <p class="text-min-sm font-medium text-gray md:text-max-sm">
+            Made with <span class="text-red-600">&hearts;</span> by Innovision tech
+            team
+          </p>
+        </main>
+
+        <ul
+          class="mt-3 flex flex-wrap items-center text-min-sm text-text md:mt-0 md:text-max-sm"
+        >
+          <li>
+            <a href="#" class="mr-4 hover:underline md:mr-6">Facebook</a>
+          </li>
+          <li>
+            <a href="#" class="mr-4 hover:underline md:mr-6">Instagram</a>
+          </li>
+          <li>
+            <a href="#contact" class="hover:underline">Contact</a>
+          </li>
+        </ul>
+      </footer>
+    </div>
+
+    <!-- PRELOADER -->
+    <div class="preloader-page">
+      <div class="loader__wrapper">
+        <div class="preloader-page__loader">
+          <div class="loader__text">
+            <h3>Innovision 2022</h3>
+            <p class="mt-2">Loading...</p>
+          </div>
+          <span class="loader__circle"></span>
+          <span class="loader__circle"></span>
+        </div>
+      </div>
+      <div class="loader__shape">
+        <svg
+          class="shape"
+          width="100%"
+          height="100vh"
+          preserveAspectRatio="none"
+          viewBox="0 0 1440 800"
+        >
+          <path
+            d="M -44,-50 C -52.71,28.52 15.86,8.186 184,14.69 383.3,22.39 462.5,12.58 638,14 835.5,15.6 987,6.4 1194,13.86 1661,30.68 1652,-36.74 1582,-140.1 1512,-243.5 15.88,-589.5 -44,-50 Z"
+            pathdata:id="M -44,-50 C -137.1,117.4 67.86,445.5 236,452 435.3,459.7 500.5,242.6 676,244 873.5,245.6 957,522.4 1154,594 1593,753.7 1793,226.3 1582,-126 1371,-478.3 219.8,-524.2 -44,-50 Z"
+          ></path>
+        </svg>
+      </div>
+    </div>
+
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>
