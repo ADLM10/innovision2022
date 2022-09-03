@@ -263,3 +263,12 @@
     justify-content: start;
   }
 }
+
+.enlarge{
+  scale: 1;
+}
+
+.enlarge:hover{
+  scale: 1.15;
+  transition: scale 0.2s ease-in;
+}
