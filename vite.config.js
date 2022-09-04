@@ -10,7 +10,6 @@ module.exports = defineConfig({
     rollupOptions: {
       input: {
         main: resolve(__dirname, 'src', 'index.html'),
-        about: resolve(__dirname, 'src', 'about/index.html'),
         events: resolve(__dirname, 'src', 'events/index.html'),
       },
       external: ['humans.txt'],
