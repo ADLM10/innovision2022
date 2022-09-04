@@ -6,19 +6,19 @@
     <meta name="msapplication-tap-highlight" content="no" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Innovision 2022 </title>
+    <title>Innovision 2022</title>
 
     <meta name="author" content="Innovision 2022 Tech Team" />
     <meta name="keywords" content="website annual fest rcciit college" />
     <meta
       name="description"
-      content="Innovision - The annual departmental fest in RCC Institute of Information Technology 2022"
+      content="Innovision 2k22 - The annual departmental fest of CSE Department | Think it - Make it - Win it"
     />
 
     <meta itemprop="name" content="Innovision" />
     <meta
       itemprop="description"
-      content="Innovision - The annual departmental fest in RCC Institute of Information Technology 2022"
+      content="Innovision 2k22 - The annual departmental fest of CSE Department | Think it - Make it - Win it"
     />
     <meta
       itemprop="image"
@@ -31,17 +31,14 @@
 
     <meta property="og:url" content="https://Innovision2022.co/" />
     <meta property="og:type" content="website" />
-    <meta
-      property="og:title"
-      content="Innovision 2022 "
-    />
+    <meta property="og:title" content="Innovision 2022 " />
     <meta
       property="og:image"
       content="https://ik.imagekit.io/rain/Innovision22/Innovision_og_image_ZLL4BGHFD?ik-sdk-version=javascript-1.4.3"
     />
     <meta
       property="og:description"
-      content="Innovision - The annual departmental fest of Department of Computer Science and Engineering in RCC Institute of Information Technology 2022"
+      content="Innovision 2k22 - The annual departmental fest of CSE Department | Think it - Make it - Win it"
     />
     <meta property="og:site_name" content="Innovision2022.co" />
 
@@ -53,7 +50,9 @@
     <link type="text/plain" rel="author" href="/humans.txt" />
 
     <link rel="stylesheet" href="./contact.css" />
-
+    <!-- Calendar -->
+    <link rel="stylesheet" href="src/css/vanilla-calendar-min.css" />
+    <script src="src/js/vanilla-calendar-min.js"></script>
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"
       integrity="sha512-z4OUqw38qNLpn1libAN9BsoDx6nbNFio5lA6CuTp9NlK83b89hgyCVq+N5FdBJptINztxn1Z3SaKSKUS5UP60Q=="
@@ -61,7 +60,6 @@
       referrerpolicy="no-referrer"
     ></script>
   </head>
-
   <style>
     * {
       -webkit-tap-highlight-color: transparent;
@@ -182,19 +180,30 @@
         class="relative z-[2] min-h-screen w-full pt-24"
       >
         <div class="z-10 px-6 md:px-12">
-
-          <div style="display:flex ; flex-direction:row; align-items: center; gap: 10px;">
-
-            <img src="https://upload.wikimedia.org/wikipedia/en/thumb/8/8d/National_Board_of_Accreditation.svg/330px-National_Board_of_Accreditation.svg.png" alt="" style="width:70px ;">
-            <h1 style="font-size:20px ;font-weight: 500;">Depatment of Computer Science & <br>Engineering</h1>
+          <div
+            style="
+              display: flex;
+              flex-direction: row;
+              align-items: center;
+              gap: 10px;
+            "
+          >
+            <img
+              src="https://upload.wikimedia.org/wikipedia/en/thumb/8/8d/National_Board_of_Accreditation.svg/330px-National_Board_of_Accreditation.svg.png"
+              alt=""
+              style="width: 70px"
+            />
+            <h1 style="font-size: 20px; font-weight: 500">
+              Depatment of Computer Science & <br />Engineering
+            </h1>
           </div>
 
           <div class="mt-6">
             <p
               data-sub-title
-              class="text-min-base font-medium md:text-max-base"
+              class="my-32 text-min-base font-medium md:text-max-base"
             >
-              Presents its annual departmental fest
+              Presenting our annual departmental fest
             </p>
             <h1
               data-splitting
@@ -232,15 +241,14 @@
           </div>
 
           <div class="absolute bottom-16 md:right-12">
-
-          
             <div data-guitar-image class="h-40 w-40 sm:ml-auto sm:h-48 sm:w-48">
-              <img
+              <!-- <img
                 class="block h-full w-full"
                 src=""
                 alt=""
                 aria-hidden="true"
-              />
+              /> -->
+              <div id="color-calendar"></div>
             </div>
             <p
               data-guitar-date
@@ -294,25 +302,12 @@
               class="mb-6 text-min-lg font-bold text-text underline decoration-dark underline-offset-1 md:text-max-lg"
               >8th Sept</span
             >
-            <div class="flex flex-wrap items-center justify-center " style="gap:40px ;" >
+            <div
+              class="flex flex-wrap items-center justify-center"
+              style="gap: 40px"
+            >
               <div
-                class="max-w-xs flex-shrink-0 rounded-lg border-2 border-dark shadow-lg enlarge"
-              >
-                <img
-                  class="mb-8 block rounded-lg object-cover object-center p-0"
-                  src=""
-                  alt=""
-                />
-                <div class="px-5 pb-5">
-                  <h5
-                    class="text-center text-min-base font-medium tracking-tight text-text md:text-max-base "
-                  >
-                  <a href="events/">Tech C</a>
-                  </h5>
-                </div>
-              </div>
-              <div
-                class="max-w-xs flex-shrink-0 rounded-lg border-2 border-dark shadow-lg enlarge"
+                class="enlarge max-w-xs flex-shrink-0 rounded-lg border-2 border-dark shadow-lg"
               >
                 <img
                   class="mb-8 block rounded-lg object-cover object-center p-0"
@@ -323,12 +318,12 @@
                   <h5
                     class="text-center text-min-base font-medium tracking-tight text-text md:text-max-base"
                   >
-                  <a href="events/">Spell Bee</a>
+                    <a href="events/">Tech C</a>
                   </h5>
                 </div>
               </div>
               <div
-                class="max-w-xs flex-shrink-0 rounded-lg border-2 border-dark shadow-lg enlarge"
+                class="enlarge max-w-xs flex-shrink-0 rounded-lg border-2 border-dark shadow-lg"
               >
                 <img
                   class="mb-8 block rounded-lg object-cover object-center p-0"
@@ -339,12 +334,12 @@
                   <h5
                     class="text-center text-min-base font-medium tracking-tight text-text md:text-max-base"
                   >
-                  <a href="events/">Hackathon starts</a>
+                    <a href="events/">Spell Bee</a>
                   </h5>
                 </div>
               </div>
               <div
-                class="max-w-xs flex-shrink-0 rounded-lg border-2 border-dark shadow-lg enlarge"
+                class="enlarge max-w-xs flex-shrink-0 rounded-lg border-2 border-dark shadow-lg"
               >
                 <img
                   class="mb-8 block rounded-lg object-cover object-center p-0"
@@ -355,12 +350,12 @@
                   <h5
                     class="text-center text-min-base font-medium tracking-tight text-text md:text-max-base"
                   >
-                  <a href="events/">Codathon Prelims</a>
+                    <a href="events/">Hackathon starts</a>
                   </h5>
                 </div>
               </div>
               <div
-                class="max-w-xs flex-shrink-0 rounded-lg border-2 border-dark shadow-lg enlarge"
+                class="enlarge max-w-xs flex-shrink-0 rounded-lg border-2 border-dark shadow-lg"
               >
                 <img
                   class="mb-8 block rounded-lg object-cover object-center p-0"
@@ -371,12 +366,12 @@
                   <h5
                     class="text-center text-min-base font-medium tracking-tight text-text md:text-max-base"
                   >
-                  <a href="events/">Wall, Shutterbugs submission ends</a>
+                    <a href="events/">Codathon Prelims</a>
                   </h5>
                 </div>
               </div>
               <div
-                class="max-w-xs flex-shrink-0 rounded-lg border-2 border-dark shadow-lg enlarge"
+                class="enlarge max-w-xs flex-shrink-0 rounded-lg border-2 border-dark shadow-lg"
               >
                 <img
                   class="mb-8 block rounded-lg object-cover object-center p-0"
@@ -387,7 +382,23 @@
                   <h5
                     class="text-center text-min-base font-medium tracking-tight text-text md:text-max-base"
                   >
-                  <a href="events/">Quiz</a>
+                    <a href="events/">Wall, Shutterbugs submission ends</a>
+                  </h5>
+                </div>
+              </div>
+              <div
+                class="enlarge max-w-xs flex-shrink-0 rounded-lg border-2 border-dark shadow-lg"
+              >
+                <img
+                  class="mb-8 block rounded-lg object-cover object-center p-0"
+                  src=""
+                  alt=""
+                />
+                <div class="px-5 pb-5">
+                  <h5
+                    class="text-center text-min-base font-medium tracking-tight text-text md:text-max-base"
+                  >
+                    <a href="events/">Quiz</a>
                   </h5>
                 </div>
               </div>
@@ -400,10 +411,10 @@
               >9th Sept</span
             >
             <div
-              class="flex flex-wrap items-end justify-center gap-12 md:justify-between" 
+              class="flex flex-wrap items-end justify-center gap-12 md:justify-between"
             >
               <div
-                class="max-w-xs flex-shrink-0 rounded-lg border-2 border-dark shadow-lg enlarge"
+                class="enlarge max-w-xs flex-shrink-0 rounded-lg border-2 border-dark shadow-lg"
               >
                 <img
                   class="mb-8 block rounded-lg object-cover object-center p-0"
@@ -414,12 +425,12 @@
                   <h5
                     class="mb-2 text-center text-min-base font-medium tracking-tight text-text md:text-max-base"
                   >
-                    <a href="events/">CTF Begins</a> 
+                    <a href="events/">CTF Begins</a>
                   </h5>
                 </div>
               </div>
               <div
-                class="max-w-xs flex-shrink-0 rounded-lg border-2 border-dark shadow-lg enlarge"
+                class="enlarge max-w-xs flex-shrink-0 rounded-lg border-2 border-dark shadow-lg"
               >
                 <img
                   class="mb-8 block rounded-lg object-cover object-center p-0"
@@ -430,12 +441,12 @@
                   <h5
                     class="mb-2 text-center text-min-base font-medium tracking-tight text-text md:text-max-base"
                   >
-                  <a href="events/">Codathon Finals</a>
+                    <a href="events/">Codathon Finals</a>
                   </h5>
                 </div>
               </div>
               <div
-                class="max-w-xs flex-shrink-0 rounded-lg border-2 border-dark shadow-lg enlarge"
+                class="enlarge max-w-xs flex-shrink-0 rounded-lg border-2 border-dark shadow-lg"
               >
                 <img
                   class="mb-8 block rounded-lg object-cover object-center p-0"
@@ -446,12 +457,12 @@
                   <h5
                     class="text-center text-min-base font-medium tracking-tight text-text md:text-max-base"
                   >
-                  <a href="events/">Extempore</a>
+                    <a href="events/">Extempore</a>
                   </h5>
                 </div>
               </div>
               <div
-                class="max-w-xs flex-shrink-0 rounded-lg border-2 border-dark shadow-lg enlarge"
+                class="enlarge max-w-xs flex-shrink-0 rounded-lg border-2 border-dark shadow-lg"
               >
                 <img
                   class="mb-8 block rounded-lg object-cover object-center p-0"
@@ -462,12 +473,12 @@
                   <h5
                     class="text-center text-min-base font-medium tracking-tight text-text md:text-max-base"
                   >
-                  <a href="events/">Webify</a>
+                    <a href="events/">Webify</a>
                   </h5>
                 </div>
               </div>
               <div
-                class="max-w-xs flex-shrink-0 rounded-lg border-2 border-dark shadow-lg enlarge"
+                class="enlarge max-w-xs flex-shrink-0 rounded-lg border-2 border-dark shadow-lg"
               >
                 <img
                   class="mb-8 block rounded-lg object-cover object-center p-0"
@@ -478,7 +489,7 @@
                   <h5
                     class="text-center text-min-base font-medium tracking-tight text-text md:text-max-base"
                   >
-                  <a href="events/">Monopoly</a>
+                    <a href="events/">Monopoly</a>
                   </h5>
                 </div>
               </div>
