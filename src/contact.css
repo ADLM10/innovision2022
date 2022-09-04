@@ -160,7 +160,12 @@
   color: #ffffff;
   text-decoration: none;
 }
-
+@media only screen and (max-width:767px){
+  .move{
+    margin-left: 55%;
+  }
+  
+}
 @media only screen and (min-width: 820px) {
   .maps-mob-iframe {
     display: none;
