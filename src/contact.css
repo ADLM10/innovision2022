@@ -43,7 +43,8 @@
   letter-spacing: 0.03em;
   margin-top: 5px;
   margin-bottom: 5px;
-  color: #ffffff;
+  /* color: #ffffff; */
+  color: beige;
 }
 
 .contacts .contacts-item a:hover {
@@ -61,7 +62,9 @@
   line-height: 21px;
   text-align: center;
   letter-spacing: 0.03em;
-  color: #ffffff;
+  /* color: #ffffff; */
+  color: beige
+  ;
 }
 
 .contact-email-section .email-us h3 {
@@ -81,7 +84,8 @@
   line-height: 43px;
   text-align: center;
   letter-spacing: 0.03em;
-  color: #ffffff;
+  /* color: #ffffff; */
+  color:beige;
 }
 
 .contact-email-section a:hover {
@@ -157,7 +161,8 @@
   line-height: 21px;
   text-align: center;
   letter-spacing: 0.03em;
-  color: #ffffff;
+  /* color: #ffffff; */
+  color: beige;
   text-decoration: none;
 }
 @media only screen and (max-width:767px){
@@ -278,4 +283,10 @@
 .enlarge:hover{
   scale: 1.15;
   transition: scale 0.2s ease-in;
+}
+
+.sym{
+  height: 170px;
+  width: 250px;
+  justify-content: space-between;
 }

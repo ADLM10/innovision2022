@@ -23,3 +23,14 @@ deploy
 *.njsproj
 *.sln
 *.sw?
+.firebaserc
+.gitignore
+firebase.json
+.firebase/hosting.ZGVwbG95.cache
+.github/workflows/firebase-hosting-merge.yml
+.github/workflows/firebase-hosting-pull-request.yml
+.firebase
+.firebaserc
+firebase.json
+# Local Netlify folder
+.netlify
