@@ -12,7 +12,7 @@ export const navbar = (
     <div
       class="flex flex-wrap items-center justify-between py-4 px-6 text-text md:px-12"
     >
-      <a href="https://www.rcciit.org/" class="flex items-center">
+      <a href="https://www.rcciit.org/" class="flex items-center" target="blank">
         <img src="${logoPath}" class="mr-3 h-9 w-5" alt="RCCIIT Logo" />
         <p
           class="self-center whitespace-nowrap text-min-xs font-bold md:text-max-sm"
