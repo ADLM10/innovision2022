@@ -246,6 +246,7 @@ button:hover {
   }
   .modal-body {
     word-break: break-all;
+    font-weight: 400;
     font-size: 1rem;
   }
   .close-button {
