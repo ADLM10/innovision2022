@@ -1,4 +1,4 @@
-# Regalia 2022 website
+# Innovision 2022 website
 
 ### to start developing
 
