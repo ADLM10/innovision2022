@@ -274,6 +274,7 @@ button:hover {
   }
   .modal-header {
     padding: 23px 16px 19px 29px !important;
+    display: grid;
   }
   .close-button {
     width: 60px !important;
