@@ -11,6 +11,7 @@ module.exports = defineConfig({
       input: {
         main: resolve(__dirname, 'src', 'index.html'),
         events: resolve(__dirname, 'src', 'events/index.html'),
+        results: resolve(__dirname, 'src', 'results/index.html'),
       },
       external: ['humans.txt'],
     },
