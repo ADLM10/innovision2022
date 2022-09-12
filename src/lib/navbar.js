@@ -91,6 +91,13 @@ export const navbar = (
           </li>
           <li>
             <a
+              href="${url}results/"
+              class="block border-b border-text py-2 pr-4 pl-3 text-text active:bg-accent md:border-0 md:p-0 md:hover:bg-transparent md:hover:text-accent"
+              >Results</a
+            >
+          </li>
+          <li>
+            <a
               href="${url}#gallery"
               class="block border-b border-text py-2 pr-4 pl-3 text-text active:bg-accent md:border-0 md:p-0 md:hover:bg-transparent md:hover:text-accent"
               >Gallery</a
