@@ -1,4 +1,12 @@
-# Innovision 2022 website
+## Innovision 2022 website (innovisioncse.web.app)
+
+### Tech Stack Used: 
+- HTML 
+- JavaScript
+- Tailwind
+
+### Concepts used:
+- CSS
 
 ### to start developing
 
