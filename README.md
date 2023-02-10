@@ -1,4 +1,4 @@
-## Innovision 2022 website (innovisioncse.web.app)
+## Innovision 2022 website (https://cseinnovision.web.app/)
 
 ### Tech Stack Used: 
 - HTML 
